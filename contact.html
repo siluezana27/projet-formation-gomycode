@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="lesimageduprj/images fotamana.jpg" type="image/x-icon">
   <title>Contact - Poro Tourisme</title>
-  <link rel="stylesheet" href="style.css"> <!-- Ajoutez un fichier CSS si nécessaire -->
   <style>
         /* Style général */
     /* Style général */
@@ -105,7 +104,9 @@ form input, form select, form textarea, form button {
   border-radius: 5px;
   font-size: 1rem;
 }
-
+button{
+  cursor: pointer;
+}
 form input:focus, form select:focus, form textarea:focus {
   border-color: #4CAF50;
 }
@@ -138,7 +139,15 @@ footer{
   color: white;
   text-transform: capitalize;
 }
+.error{
+  color: red;
+  font-size: 0.9rem;
+}
 
+button:disabled{
+  background-color: rgb(175, 168, 168);
+  cursor: not-allowed;
+}
   @media screen and(max-width:900px){
        /* Style général */
        body {
@@ -191,12 +200,15 @@ footer{
         <form action="/submit" method="POST">
           <label for="nom">Nom :</label>
           <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          <div id="error-nom" class="error"></div>
     
           <label for="email">E-mail :</label>
           <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+          <div id="error-Email" class="error"></div>
     
           <label for="age">Âge :</label>
           <input type="number" id="age" name="age" placeholder="Votre âge" required min="0">
+          <div id="error-Age" class="error"></div>
     
           <!--<label for="sexe">Sexe :</label>
           <select id="sexe" name="sexe" required>
@@ -208,8 +220,9 @@ footer{
     
           <label for="message">Message :</label>
           <textarea id="message" name="message" placeholder="Votre message" rows="5" required>entrez votre message</textarea>
+          <div id="error-message" class="error"></div>
     
-          <button type="submit">Envoyer</button>
+          <button type="submit" id="envoyer" disabled="true">Envoyer</button>
     </section>
   </main>
 
@@ -228,13 +241,10 @@ footer{
             <a href="./prj.html">festivale-senangue </a>
         </div>
         <div>
-            <form action="mail" method="POST">
-                <label for="email"> Entrez votre Adresse e-mail svp !:</label> <br> <br>
-                <input type="email" id="email" name="email" required> <br> <br>
-                <button type="submit">Envoyer</button>
-            </form>
+          <a href="mailto:siluesilue919@gmail.com">Contactez-nous par e-mail</a>
         </div>
     </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
