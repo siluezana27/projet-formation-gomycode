@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="lesimageduprj/images fotamana.jpg" type="image/x-icon">
+  <title>Contact - Poro Tourisme</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ajoutez un fichier CSS si nécessaire -->
+  <style>
+        /* Style général */
+    /* Style général */
+    .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* Centre verticalement */
+    padding: 10px;
+    text-align: center;   /* Centre le texte à l'intérieur du conteneur */
+    
+}
+
+.nav-bar h1{
+  text-transform:uppercase;
+  color: orangered;
+}
+.nav-bar a {
+  text-decoration: none;
+}
+
+.liens-navv {
+  display: flex;
+  text-transform: capitalize;
+
+  margin:0 30px;
+  font-size:22px;
+  color:gray;
+  text-decoration:none;
+}
+.liens-navv a { 
+  text-decoration:none;
+  color: gray;
+  padding:15px 10px;
+
+}
+
+.liens-navv a:hover{
+background-color: #004c75;
+padding:15px 10px;
+color: white;
+}
+
+
+.liens-navv a {
+  margin-left: 20px;
+}
+
+.Message h1{
+font-size: 20px;
+background-color: grey;
+align-items: center;
+}
+.Message h1 span{
+  background-color: orange;
+  color: white;
+  width: 50%;
+  text-transform: capitalize;
+  padding:10px 6px;
+
+}
+
+h1{
+  display: flex;
+}
+
+
+marquee{
+  word-spacing: 300px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #4CAF50;}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+}
+
+form input, form select, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #4CAF50;
+}
+
+/* Footer */
+/* Footer */
+.foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+}
+
+footer{
+  background-image: url('lesimageduprj/Poro_region_locator_map_Côte_d\'Ivoire.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+
+}
+.foot div a{
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  padding: 15px 10px;
+  text-transform: capitalize;
+}
+.foot div a:hover{
+  background-color: #004c75;
+  padding: 15px 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+  @media screen and(max-width:900px){
+       /* Style général */
+       body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+  </style>
+  
+</head>
+<body>
+     <header class="en-tete">   
+      <nav class="nav-bar">
+  <!--<img src="./lesimageduprj/images fotamana.jpg" alt="fatamana">-->
+          <a href="#"><h1> poro tourisme</h1></a>
+         <div class="liens-navv">
+          <a href=""> hotel</a>
+          <a href="">restaurant</a>
+          <a href=""> attractions</a>
+          <a href="">contact</a>
+          <a href="">a propos</a> 
+         </div>
+      </nav>
+  </header>
+  <div class="Message">
+  <h1>   <span> <i class="fa-solid fa-fire"></i> Message inspirant</span> <marquee behavior="" direction="" class="cl-v"><div class="separator">FOTAMANA!</marquee> <marquee behavior="" direction=""></div> BIENVENUE!</marquee>  <marquee behavior="" direction=""><div class="separator"></div>WELCOME!</marquee> </h1>
+   </div>  
+
+  <main>
+    <!--<section id="contact-form">
+      <h2>Nous Contacter</h2>
+      <form action="mailto:contact@poro-tourisme.ci" method="post" enctype="text/plain">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message ici" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>-->
+
+    <section class="formulaire">
+      <div class="form-container">
+        <h2>Contactez-Nous</h2>
+        <form action="/submit" method="POST">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    
+          <label for="email">E-mail :</label>
+          <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+    
+          <label for="age">Âge :</label>
+          <input type="number" id="age" name="age" placeholder="Votre âge" required min="0">
+    
+          <!--<label for="sexe">Sexe :</label>
+          <select id="sexe" name="sexe" required>
+            <option value="">--Sélectionnez--</option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Autre</option>
+          </select>-->
+    
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" placeholder="Votre message" rows="5" required>entrez votre message</textarea>
+    
+          <button type="submit">Envoyer</button>
+    </section>
+  </main>
+
+  <footer> <br><br><br>
+    <div class="foot"> 
+        <div> 
+        <h3> Nos liens</h3>
+        <a href="#"> restaurant</a> <br> <br>
+        <a href="#">hotel</a> <br> <br>
+        <a href="#">attractions</a> <br> <br>
+        <a href="#">a propos</a> <br> <br>
+        <a href="#">contact</a> <br> <br>
+        </div>
+        <div>
+            <h3>Autres sites</h3>
+            <a href="#">festivale-senangue </a>
+        </div>
+        <div>
+            <form action="mail" method="POST">
+                <label for="email"> Entrez votre Adresse e-mail svp !:</label> <br> <br>
+                <input type="email" id="email" name="email" required> <br> <br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

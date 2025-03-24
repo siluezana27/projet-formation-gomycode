@@ -1,0 +1,414 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* Centre verticalement */
+    padding: 10px;
+    text-align: center;   /* Centre le texte à l'intérieur du conteneur */
+    
+}
+
+.nav-bar h1{
+  text-transform:uppercase;
+  color: orangered;
+}
+.nav-bar a {
+  text-decoration: none;
+}
+
+.liens-navv {
+  display: flex;
+  text-transform: capitalize;
+
+  margin:0 30px;
+  font-size:22px;
+  color:gray;
+  text-decoration:none;
+}
+.liens-navv a { 
+  text-decoration:none;
+  color: gray;
+  padding:15px 10px;
+
+}
+
+.liens-navv a:hover{
+background-color: #004c75;
+padding:15px 10px;
+color: white;
+}
+
+
+.liens-navv a {
+  margin-left: 20px;
+}
+
+.Message h1{
+font-size: 20px;
+background-color: grey;
+align-items: center;
+}
+.Message h1 span{
+  background-color: orange;
+  color: white;
+  width: 50%;
+  text-transform: capitalize;
+  padding:10px 6px;
+
+}
+
+h1{
+  display: flex;
+}
+
+
+marquee{
+  word-spacing: 300px;
+}
+
+.slider {
+  width: 100%;
+  height: 400px; /* Ajustez la hauteur  */
+  overflow: hidden; /* Cache les images qui dépassent */
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 100%; /* 3 images, donc 300% */
+  animation: slide 25s infinite; /* xs par image (3 images * 25s = 15s au total) */
+}
+
+.slide {
+  width: 100%; /* Chaque image occupe 100% de la largeur du conteneur */
+  flex-shrink: 0;
+}
+.slide img{
+  width: 100%;
+  height: 50%;
+
+}
+.slid{
+margin:0 0 20px 0;
+}
+
+/* code css de la video*/
+video{
+  width: 100%;
+}
+.img-d,img{
+  width: 200px;
+ }
+
+/* le code css de la section 3*/
+ .section3{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 100px ;
+ }
+
+ .section3 img:hover {
+  transform: scale(1.6); /* Agrandit légèrement l'image */
+  transition: transform 0.3s ease-in-out; /* Ajoute une transition fluide */
+}
+.creation{
+  background-color: rgb(28, 28, 158);
+  font-size: 30px;
+  padding: 10px;
+}
+/* le code css de la section gastronomie*/
+.gastro{
+ /* background-color: black;*/
+ width: 70%;
+  margin: 0 auto;
+}
+.gastro h2{
+  text-align: center;
+}
+.gastronomie{
+  /*background-color: aqua;*/
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 20px 10px;
+}
+.gastronomie div{
+  background-color:#004c75;
+  margin: 20px;
+  width: 300px;
+  height: 590px;
+  border-radius: 15px;
+  /*  padding: 10px;Ajouter un peu d'espace interne (facultatif) */
+  margin: 0 10px 10px 10px;
+
+}
+
+.gastronomie div {
+  box-shadow: 0px 4px 8px rgba(2, 0, 0, 0.0); /* Ombre douce */
+  border-radius: 8px; /* Coins légèrement arrondis (facultatif) */
+  transition: box-shadow 0.3s ease; /* Effet fluide au survol */
+}
+
+/*.gastronomie div:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol 
+  padding: 10px;  Ajouter un peu d'espace interne (facultatif) 
+
+}*/
+
+
+.gastronomie img {
+   width: 100%; /*L'image prend toute la largeur disponible */
+   height: 60%; /*L'image prend toute la hauteur disponible */
+  object-fit: cover; /* L'image remplit la div tout en gardant ses proportions */
+}
+ /*.gastronomie {
+  display: flex; Active le modèle de boîte flexible 
+  flex-direction: column; /* Empile les éléments verticalement 
+  justify-content: space-between; /* Écarte les éléments (haut et bas de la div) 
+  align-items: center; /* Centre les éléments horizontalement 
+  height: 400px; /* Hauteur de la div 
+  width: 100%; /* Largeur de la div 
+  text-align: center; /* Aligne le texte des paragraphes au centre 
+}*/
+
+/*.gastronomie p {
+  margin: 0;  Supprime les marges des paragraphes, ajustable selon vos besoins 
+}*/
+
+.gastronomie a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: white; /* Garde la couleur du texte */
+font-size: 18px;
+text-transform: capitalize;
+}
+.gastronomie p{ 
+  color: white;
+  padding: 5px 10px;
+ /* margin-top: 370px;*/
+ /* margin-left: 30px;*/
+  text-align:left;
+}
+.gastronomie a{ 
+  margin-top: 370px;
+  margin-left: 10px;
+  text-align:justify;
+
+}
+.gastronomie a{
+  padding: 10px 30px;
+  border: solid yellow 3px;
+  border-radius: 10px;
+}
+/* le code css de la section 6*/
+.section6 {
+  background-image: url('./lesimageduprj/cascade1.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* L'image est centrée */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  height: auto; /* Ajustement dynamique de la hauteur */
+  padding: 20px; /* Espacement intérieur de la section */
+  color: #ffffff; /* Couleur du texte si nécessaire pour contraste */
+ /* backdrop-filter: blur(10px);  Intensity du flou */
+  /*-webkit-backdrop-filter: blur(10px);  Compatibilité navigateur */
+}
+
+/*.section6-1{
+  background-color: rgb(230, 196, 196);
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+display: flex;
+grid-template-columns: 1fr 1fr 1fr;
+}*/
+.separateur {
+  justify-content:left;
+  margin: 0 20px 0 0 ;
+  width: 8px; /* Largeur de la barre verticale */
+ background-color: rgb(149, 124, 124);  /*Couleur de la barre (modifiable) */
+ height: 80px; /* Hauteur complète de la section */
+  position: relative;  /*Nécessaire pour utiliser ::after*/ 
+}
+
+
+.separator::after {
+  content: ''; /* Ajout d'éléments visuels */
+  position: absolute;
+  top: 10%;  /*Position verticale des cercles */
+  right: -10px; /* Position des cercles à droite de la barre */
+  width: 8px; /* Diamètre du cercle */
+  height: 20px;  /*Diamètre du cercle */
+  background-color: black;  /*Couleur du cercle */
+ /* border-radius: 50%;  Transforme un carré en cercle */
+ box-shadow: 0 20px 0 black, 0 40px 0 black;  /*Ajoute des cercles supplémentaires en dessous */
+}
+
+.cercle {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%; /* Transforme en cercle */
+  position: absolute;
+  top: 50%; /* Positionne le centre verticalement */
+  left: 50%; /* Positionne le centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste pour centrer exactement */
+}
+
+.section6 div {
+  /*background-color: red;*/
+  text-align: center; /* Centre les éléments horizontalement */
+  margin: 10px 0; /* Espacement entre les divs */
+  
+}
+
+.section6 h1,
+.section6 h2,
+.section6 p {
+  text-align: center;  /*Aligne le texte des titres et paragraphes au centre */
+  
+}
+h1{
+  color: black;
+}
+
+.section6-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+}
+.c-b{
+  background-color: white;
+}
+.c-b,h2{
+  color: #004c75;
+}
+.c-b,p{
+  color: gray;
+}
+
+.sect7{
+  background-color: #004c75;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sect7 h2{
+  text-align:left;
+  color: white;
+  padding-left: 20px;
+}
+
+.sect7 div div p{
+  color: white;
+  text-align: left;
+  word-spacing: 3px;
+  font-size: 1.3em;
+}
+
+.section7{
+  background-color:#004c75;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  gap: 50px;
+}
+.section7 div img{
+  width:500px;
+  border: 5px solid blue;
+}
+
+.espaces-carte{
+  padding: 0px 30px 0px 0px;
+  padding-bottom: 5;
+}
+.espaces-carte img{
+  background-color: white;
+  width: 100%;
+  height: 90%;
+}
+
+.sect8{
+  background-color:white;
+margin: 30px 10px;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sect8:hover{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.section8{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.section8 div div img{
+  width: 300px;
+  height: 200px;
+}
+.section8 div div a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+}
+
+footer{
+  background-image: url('lesimageduprj/Poro_region_locator_map_Côte_d\'Ivoire.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+
+}
+.foot div a{
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  padding: 15px 10px;
+  text-transform: capitalize;
+}
+.foot div a:hover{
+  background-color: #004c75;
+  padding: 15px 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+
+
+/*#nature{
+  background-color: black;
+  margin-top: 350px;
+}
+
+/*#nature p{
+  margin-top: 5em;
+}
+
+/*.nature1 div{
+  background-color: black;
+  margin: 20px 10px;
+  gap: 20px;
+}
+/*#nature img, .nature1 img {
+  width: 100%; /* Adapte la taille de l'image au conteneur 
+  height: 50%; /* Conserve les proportions originales 
+}*/
+
+/*#nature p, .nature1 p {
+  margin-top: 10px; /* Ajuste l'espace entre les paragraphes et les images 
+}*/
+
+
+

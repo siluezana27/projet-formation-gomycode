@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./les images de prj/images fotamana.jpg" type="image/x-icon">
+  <title>Poro Tourisme - Attractions</title>
+  <link rel="stylesheet" href="style.css"> <!-- Ajoutez un lien vers votre fichier CSS si nécessaire -->
+</head>
+<style>
+    /* Style général */
+    .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* Centre verticalement */
+    padding: 10px;
+    text-align: center;   /* Centre le texte à l'intérieur du conteneur */
+    
+}
+
+.nav-bar h1{
+  text-transform:uppercase;
+  color: orangered;
+}
+.nav-bar a {
+  text-decoration: none;
+}
+
+.liens-navv {
+  display: flex;
+  text-transform: capitalize;
+
+  margin:0 30px;
+  font-size:22px;
+  color:gray;
+  text-decoration:none;
+}
+.liens-navv a { 
+  text-decoration:none;
+  color: gray;
+  padding:15px 10px;
+
+}
+
+.liens-navv a:hover{
+background-color: #004c75;
+padding:15px 10px;
+color: white;
+}
+
+
+.liens-navv a {
+  margin-left: 20px;
+}
+
+.Message h1{
+font-size: 20px;
+background-color: grey;
+align-items: center;
+}
+.Message h1 span{
+  background-color: orange;
+  color: white;
+  width: 50%;
+  text-transform: capitalize;
+  padding:10px 6px;
+
+}
+
+h1{
+  display: flex;
+}
+
+
+marquee{
+  word-spacing: 300px;
+}
+
+.slider {
+  width: 100%;
+  height: 400px; /* Ajustez la hauteur  */
+  overflow: hidden; /* Cache les images qui dépassent */
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 100%; /* 3 images, donc 300% */
+  animation: slide 25s infinite; /* xs par image (3 images * 25s = 15s au total) */
+}
+
+.slide {
+  width: 100%; /* Chaque image occupe 100% de la largeur du conteneur */
+  flex-shrink: 0;
+}
+.slide img{
+  width: 100%;
+  height: 50%;
+
+}
+.slid{
+margin:0 0 20px 0;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+div{
+  box-shadow: red;
+  border: radius 10px;
+  border: #94d2bd;
+}
+
+.animated-section {
+  display: flex;
+  background-color:#004c75;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  text-align:justify;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*margin-top: 20px;*/
+}
+
+h2{
+  text-align: center;
+  color: blue;
+}
+p{
+  font-size: 20px;
+  letter-spacing: 1.3;
+
+}
+
+/* Effet au passage de la souris */
+.animated-section:hover {
+  transform: translateY(-10px); /* La section "monte" légèrement */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre plus marquée */
+}
+h3{
+  color: blue;
+}
+
+
+  /*le footer
+  footer{
+    background-color: #48e885;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }*/
+
+/* Footer */
+.foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+}
+
+footer{
+  background-image: url('lesimageduprj/Poro_region_locator_map_Côte_d\'Ivoire.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+
+}
+.foot div a{
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  padding: 15px 10px;
+  text-transform: capitalize;
+}
+.foot div a:hover{
+  background-color: #004c75;
+  padding: 15px 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+  @media screen and(max-width:900px){
+       /* Style général */
+       body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+/* Header 
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}*/
+
+header h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header{
+    color: white;
+    position: relative;
+    margin: 0px 0px 0px 100px;
+    text-align: center;
+  }
+
+  h4{
+  text-align: center;
+  color:orangered;
+  font-size: 40px;
+}
+
+
+  nav div{
+    background-color: black;
+   justify-content: space-between;
+    display: flex;
+    text-transform: uppercase; 
+    position: fixed;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  button{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+  }
+   
+  nav div ul li a:hover{
+    color: red;
+  }
+
+  .dro2 {
+    text-align: right;
+  }
+
+/*la bande passante*/
+.cl {
+    background-color: rgb(4, 0, 255);
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    color: #48e885; 
+  }
+
+  .cl-o{
+    color: red;
+  }
+
+  .cl-b{
+    color: white;
+  }
+
+  .cl-v{
+    color: #48e885;
+  }
+  h1:hover{
+    color:orangered;
+  }
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0a9396;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #94d2bd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  
+  nav div a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  nav div a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Style du bouton déroulant */
+  .dropbtn1 {
+  background-color: blue;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style du conteneur du menu déroulant */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+
+
+}
+
+/* Style du contenu du menu déroulant */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(255, 254, 254);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Liens à l'intérieur du menu déroulant */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Modifier la couleur du lien au survol */
+.dropdown-content a:hover {background-color:green}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Changer la couleur du bouton déroulant au survol */
+.dropdown:hover .dropbtn1 {
+  background-color: orangered
+}
+
+.dropdown:hover .dropbtn {
+  background-color: orangered
+}
+
+div{
+  background-color: #48e885;
+  box-shadow: red;
+  border: radius 10px;
+  border: #94d2bd;
+}
+
+.animated-section {
+  display: flex;
+  background-color:lightblue;
+  color: black;
+  padding: 20px;
+  gap: 20px;
+  text-align:justify;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*margin-top: 20px;*/
+}
+
+h2{
+  text-align: center;
+  color: blue;
+}
+p{
+  font-size: 20px;
+  letter-spacing: 1.3;
+
+}
+
+/* Effet au passage de la souris */
+.animated-section:hover {
+  transform: translateY(-10px); /* La section "monte" légèrement */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre plus marquée */
+}
+h3{
+  color: blue;
+}
+
+
+  /*le footer
+  footer{
+    background-color: #48e885;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }*/
+
+/* Footer */
+footer{
+  margin: 1em 0;
+    background-color: #48e885;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  /*code css de pied de page*/
+  .pied-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: auto;
+    height: 10%;
+  } 
+    
+  }
+
+
+</style>
+<body>
+  <header class="en-tete">   
+    <nav class="nav-bar">
+<!--<img src="./lesimageduprj/images fotamana.jpg" alt="fatamana">-->
+        <a href="#"><h1> poro tourisme</h1></a>
+       <div class="liens-navv">
+        <a href=""> hotel</a>
+        <a href="">restaurant</a>
+        <a href=""> attractions</a>
+        <a href="">contact</a>
+        <a href="">a propos</a> 
+       </div>
+    </nav>
+</header>
+<div class="Message">
+<h1>   <span> <i class="fa-solid fa-fire"></i> Message inspirant</span> <marquee behavior="" direction="" class="cl-v"><div class="separator">FOTAMANA!</marquee> <marquee behavior="" direction=""></div> BIENVENUE!</marquee>  <marquee behavior="" direction=""><div class="separator"></div>WELCOME!</marquee> </h1>
+ </div>
+
+<section class="slid">
+    <div class="content">
+        <div class="slider">
+            <div class="slides">
+              <div class="slide"><img src="./lesimageduprj/masque-wambele.jpg" alt="Image 1"></div>
+              <div class="slide"><img src="./lesimageduprj/stade FB_IMG_1680524597961.jpg" alt="Image 2"></div>
+              <div class="slide"><img src="./lesimageduprj/SLIDER side-view-woman-clay-sculpting.jpg" alt="Image 3"></div>
+              <div class="slide"><img src="./lesimageduprj/SLIDERmedium-shot-nigerian-dancers.jpg" alt="Image 1"></div>
+
+            </div>
+          </div> 
+    </div>
+</section>
+
+  <main>
+    <section id="attractions">
+
+      <h2>Attractions Touristiques</h2>
+      
+      <h3>Les Cascades</h3>
+      <div class="animated-section"> 
+     <img src="lesimageduprj/cascade1.jpg" alt="">
+          <p>Les cascades de la région du Poro, notamment la cascade de Nafoun près de Boundiali, sont des merveilles naturelles entourées de végétation luxuriante. Elles offrent un cadre apaisant idéal pour les pique-niques et la photographie. Ces sites sont parfaits pour les amoureux de la nature et ceux qui cherchent à explorer la beauté authentique de la région.</p>
+  <img src="./les images de prj/cascade carfigue.jpg" alt="">
+     </div> 
+
+    <h3>Le marché artisanal</h3>
+    <div class="animated-section">  
+      <img src="lesimageduprj/images (15).jpg" alt="">
+          <p>Le marché artisanal de la région du Poro, notamment à Korhogo, est un lieu incontournable pour découvrir l'artisanat sénoufo. On y trouve des sculptures en bois, des tissus traditionnels, des bijoux faits main et bien d'autres objets reflétant le savoir-faire local. Ce marché est non seulement un espace de commerce, mais aussi un lieu de rencontre culturelle où les artisans partagent leur héritage avec les visiteurs. Une visite idéale pour apprécier la richesse de l'artisanat ivoirien.</p>
+          <img src="lesimageduprj/images (29).jpg" alt="">
+        </div> 
+
+         <h3>Le Mont Korhogo</h3>
+    <div class="animated-section"> 
+      <img src="lesimageduprj/mont korhogo0.jpg" alt="">
+          <p>Le Mont Korhogo, situé dans la région du Poro à Korhogo, est une colline emblématique qui culmine à environ 500 mètres d'altitude. Ce site naturel offre une vue panoramique sur la ville et ses environs, ce qui en fait une destination prisée pour les amateurs de randonnée et de paysages. En plus de son attrait touristique, le mont est également un symbole culturel et historique pour la région.</p>
+          <img src="lesimageduprj/mont-kgo.jpg" alt="">
+      </div> 
+
+      <h3>festivale du senangue</h3>
+      <div class="animated-section"> 
+        <img src="lesimageduprj/le festivale du senangue.jpg" alt="">
+            <p>Le Festival du Senang, organisé à Korhogo dans la région du Poro, célèbre la culture sénoufo à travers danses traditionnelles, compétitions, expositions d'artisanat et découvertes gastronomiques. Cet événement annuel attire de nombreux visiteurs et met en valeur les traditions locales dans un esprit de partage et de fête.</p>
+            <img src="./les images de prj/festivale.jpg" alt="">
+        </div>
+
+        <h3>Le musee peleforo gbon COULIBALY</h3>
+        <div class="animated-section"> 
+          <img src="lesimageduprj/images (15).jpg" alt="">
+              <p>Le Musée Péléforo Gbon Coulibaly, situé à Korhogo dans la région du Poro, est une ancienne maison de Péléforo Gbon Coulibaly, chef sénoufo influent. Converti en musée régional en 1992, il expose des objets artisanaux, masques traditionnels comme le Wabêle, et d'autres éléments culturels sénoufos. Ce lieu incarne un patrimoine historique et culturel vital pour la région.</p>
+              <img src="lesimageduprj/images (15).jpg" alt="">
+          </div>
+
+          <h3>Les tisserants de waranierers</h3>
+          <div class="animated-section"> 
+            <img src="lesimageduprj/tisserant de waraniere.jpg" alt="">
+                <p>Les tisserands de Waraniéné, un village situé près de Korhogo en Côte d'Ivoire, sont renommés pour leur art du tissage traditionnel. Ce village abrite environ 354 métiers à tisser, utilisés par près de 500 artisans et apprentis. Le tissage y est une tradition transmise de génération en génération, principalement par les hommes, tandis que les femmes participent au filage et à la couture.
+Les motifs tissés, comme le "cauris" ou la "peau d'ananas", sont souvent liés à des événements culturels tels que les mariages ou les cérémonies d'initiation. Ces créations attirent des acheteurs locaux et internationaux, faisant de Waraniéné une destination prisée pour découvrir cet artisanat unique</p>
+                <img src="lesimageduprj/tisserant.jpg" alt="">
+            </div>
+
+            <h3>Les sculpteurs de koko </h3>
+            <div class="animated-section"> 
+              <img src="lesimageduprj/Calaos-Restaurants1-1140x713.jpg" alt="">
+                  <p>Les sculpteurs du quartier Koko à Korhogo, en Côte d'Ivoire, sont célèbres pour leur artisanat exceptionnel, notamment les masques, statuettes et autres objets décoratifs inspirés de la culture Sénoufo2. Ces artistes utilisent souvent du teck, qu'ils teignent pour imiter l'ébène, ou du bois de fromager, apprécié pour sa légèreté. Leurs œuvres incarnent des symboles culturels riches, comme le calao, symbole de sagesse et de bonheur, ou encore des masques cérémoniels.
+Si vous êtes passionné par l'artisanat ou la culture Sénoufo, ce quartier est une destination incontournable</p>
+                  <img src="lesimageduprj/Calaos-Restaurants1-1140x713.jpg" alt="">
+              </div>
+
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour plus d'informations, visitez notre page d'accueil <a href="file:///C:/Users/Administrateur/Desktop/gomycode/projet%20gomycode/prj.html">poro-tourisme.kgo</a>.</p>
+    </section>
+  </main>
+
+  <footer> <br><br><br>
+    <div class="foot"> 
+        <div> 
+        <h3> Nos liens</h3>
+        <a href="#"> restaurant</a> <br> <br>
+        <a href="#">hotel</a> <br> <br>
+        <a href="#">attractions</a> <br> <br>
+        <a href="#">a propos</a> <br> <br>
+        <a href="#">contact</a> <br> <br>
+        </div>
+        <div>
+            <h3>Autres sites</h3>
+            <a href="#">festivale-senangue </a>
+        </div>
+        <div>
+            <form action="mail" method="POST">
+                <label for="email"> Entrez votre Adresse e-mail svp !:</label> <br> <br>
+                <input type="email" id="email" name="email" required> <br> <br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
