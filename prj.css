@@ -384,6 +384,65 @@ footer{
   text-transform: capitalize;
 }
 
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Nav bar en colonne */
+    align-items: flex-start; /* Alignement à gauche */
+  }
+
+  .liens-navv {
+    flex-direction: column; /* Liens en liste verticale */
+    gap: 10px; /* Espacement entre les éléments */
+    font-size: 18px; /* Réduire la taille de police */
+    margin: 0; /* Réinitialisation des marges */
+  }
+
+  .slider {
+    height: auto; /* Ajustement automatique de la hauteur */
+  }
+
+  .section3 {
+    flex-direction: column; /* Empile les éléments verticalement */
+    gap: 20px; /* Espacement réduit */
+    margin: 20px; /* Réduction des marges */
+  }
+
+  .gastronomie {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 20px; /* Espacement entre les éléments */
+  }
+
+  .section6-1 {
+    grid-template-columns: 1fr; /* Ajustement en colonne unique */
+  }
+
+  .sect7 {
+    flex-direction: column; /* Organisation verticale */
+    padding-left: 10px; /* Réduction du padding */
+  }
+
+  .section7 div img {
+    width: 100%; /* Image prend toute la largeur */
+    border: none; /* Suppression des bordures */
+  }
+
+  .section8 {
+    flex-direction: column; /* Ajustement vertical */
+    align-items: center; /* Centrage */
+    padding: 10px; /* Réduction du padding */
+  }
+
+  .foot {
+    flex-direction: column; /* Organisation verticale */
+    align-items: center; /* Centrage des éléments */
+    padding: 10px; /* Réduction des espaces */
+  }
+
+  .foot div a {
+    font-size: 16px; /* Réduction de la taille du texte */
+    padding: 10px 5px; /* Ajustement des marges internes */
+  }
+}
 
 
 

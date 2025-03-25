@@ -148,14 +148,75 @@ button:disabled{
   background-color: rgb(175, 168, 168);
   cursor: not-allowed;
 }
-  @media screen and(max-width:900px){
-       /* Style général */
-       body {
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-    margin: 0 auto;
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  .nav-bar {
+    flex-direction: column; /* Passe en colonne sur mobile */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 10px;
+  }
+
+  .liens-navv {
+    flex-direction: column; /* Liens en liste verticale */
+    gap: 10px; /* Ajout d'espacement entre les liens */
+    font-size: 18px; /* Réduction de la taille de la police */
+  }
+
+  /* Formulaire */
+  .form-container {
+    padding: 10px 20px; /* Réduction des espaces internes */
+    max-width: 100%; /* Prend toute la largeur de l'écran */
+    box-shadow: none; /* Suppression de l'ombre pour mobile */
+  }
+
+  form input, form select, form textarea, form button {
+    font-size: 0.9rem; /* Taille de texte adaptée */
+  }
+
+  /* Slider marquee */
+  marquee {
+    word-spacing: 100px; /* Réduction de l'espacement entre les mots */
+  }
+
+  /* Texte et titres */
+  h1, h2 {
+    font-size: 1.5rem; /* Taille ajustée des titres */
+    text-align: center; /* Recentre les titres */
+  }
+
+  /* Pied de page */
+  .foot {
+    flex-direction: column; /* Passe les éléments en colonne */
+    align-items: flex-start; /* Alignement du texte à gauche */
+    padding: 10px; /* Réduction des marges internes */
+  }
+
+  .foot div a {
+    font-size: 16px; /* Taille réduite pour les liens */
+    padding: 10px 5px; /* Ajustement des marges internes */
   }
 }
+
+@media (max-width: 480px) {
+  /* Ajustements pour les écrans très petits */
+  .liens-navv {
+    font-size: 16px; /* Encore plus petite taille de police */
+    gap: 5px; /* Moins d'espacement */
+  }
+
+  .form-container {
+    padding: 5px 10px; /* Moins d'espace interne pour mobile */
+  }
+
+  h1, h2 {
+    font-size: 1.2rem; /* Réduction supplémentaire des titres */
+  }
+
+  .foot div a {
+    font-size: 14px; /* Taille réduite des liens dans le footer */
+  }
+}
+
   </style>
   
 </head>
@@ -163,7 +224,7 @@ button:disabled{
      <header class="en-tete">   
       <nav class="nav-bar">
   <!--<img src="./lesimageduprj/images fotamana.jpg" alt="fatamana">-->
-          <a href="./prj.html"><h1> poro tourisme</h1></a>
+          <a href="prj.html"><h1> poro tourisme</h1></a>
          <div class="liens-navv">
           <a href="./hotel.html"> hotel</a>
           <a href="./RESTAURANTs.html">restaurant</a>
@@ -238,7 +299,7 @@ button:disabled{
         </div>
         <div>
             <h3>Autres sites</h3>
-            <a href="./prj.html">festivale-senangue </a>
+            <a href="prj.html">festivale-senangue </a>
         </div>
         <div>
           <a href="mailto:siluesilue919@gmail.com">Contactez-nous par e-mail</a>

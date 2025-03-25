@@ -135,7 +135,6 @@ p{
   letter-spacing: 1.3;
 
 }
-
 /* Effet au passage de la souris */
 .animated-section:hover {
   transform: translateY(-10px); /* La section "monte" légèrement */
@@ -144,8 +143,6 @@ p{
 h3{
   color: blue;
 }
-
-
   /*le footer
   footer{
     background-color: #48e885;
@@ -161,13 +158,11 @@ h3{
   justify-content: space-between;
   padding: 10px 150px;
 }
-
 footer{
   background-image: url('lesimageduprj/Poro_region_locator_map_Côte_d\'Ivoire.jpg');
   background-repeat: no-repeat;
   width: 100%;
   height: 30%;
-
 }
 .foot div a{
   text-decoration: none;
@@ -182,259 +177,60 @@ footer{
   color: white;
   text-transform: capitalize;
 }
-
-  @media screen and(max-width:900px){
-       /* Style général */
-       body {
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-/* Header 
-header {
-  background-color: #005f73;
-  color: white;
-  padding: 20px 10px;
-  text-align: center;
-}*/
-
-header h1 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-header{
-    color: white;
-    position: relative;
-    margin: 0px 0px 0px 100px;
-    text-align: center;
-  }
-
-  h4{
-  text-align: center;
-  color:orangered;
-  font-size: 40px;
-}
-
-
-  nav div{
-    background-color: black;
-   justify-content: space-between;
-    display: flex;
-    text-transform: uppercase; 
-    position: fixed;
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  .nav-bar {
+    flex-direction: column; /* Navigation en colonne pour petits écrans */
+    align-items: flex-start; /* Alignement à gauche */
     padding: 10px;
-    margin: 0px 0px 0px 0px;
   }
 
-  button{
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-  }
-   
-  nav div ul li a:hover{
-    color: red;
+  .liens-navv {
+    flex-direction: column; /* Les liens s'empilent verticalement */
+    gap: 10px; /* Espacement entre les liens */
+    margin: 0;
+    font-size: 18px; /* Taille de police réduite pour mobile */
   }
 
-  .dro2 {
-    text-align: right;
+  /* Section slider */
+  .slider {
+    height: auto; /* Ajustement automatique pour la hauteur */
   }
 
-/*la bande passante*/
-.cl {
-    background-color: rgb(4, 0, 255);
-    display: flex;
-    text-align: center;
-    text-transform: uppercase;
-    color: #48e885; 
+  .slide img {
+    height: auto; /* Images s'adaptent à la taille de l'écran */
   }
 
-  .cl-o{
-    color: red;
+  /* Sections principales */
+  .animated-section {
+    flex-direction: column; /* Organisation en colonne */
+    text-align: left; /* Aligner le texte à gauche */
+    padding: 15px;
+    gap: 10px;
   }
 
-  .cl-b{
-    color: white;
+  h2, h3 {
+    font-size: 20px; /* Taille des titres ajustée */
+    text-align: center; /* Textes centrés */
   }
 
-  .cl-v{
-    color: #48e885;
-  }
-  h1:hover{
-    color:orangered;
+  p {
+    font-size: 16px; /* Réduction de la taille du texte */
+    line-height: 1.5; /* Espacement pour améliorer la lisibilité */
   }
 
-/* Navigation */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #0a9396;
-}
-
-nav ul li {
-  margin: 0;
-  padding: 10px 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #94d2bd;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  
-  nav div a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  nav div a:hover {
-    text-decoration: underline;
+  /* Pied de page */
+  .foot {
+    flex-direction: column; /* Les éléments du footer passent en colonne */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 10px; /* Réduction des marges internes */
   }
 
-
-  /* Style du bouton déroulant */
-  .dropbtn1 {
-  background-color: blue;
-  padding: 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Style du conteneur du menu déroulant */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  color: white;
-
-
-}
-
-/* Style du contenu du menu déroulant */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:rgb(255, 254, 254);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
-}
-
-/* Liens à l'intérieur du menu déroulant */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Modifier la couleur du lien au survol */
-.dropdown-content a:hover {background-color:green}
-
-/* Afficher le menu déroulant au survol */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Changer la couleur du bouton déroulant au survol */
-.dropdown:hover .dropbtn1 {
-  background-color: orangered
-}
-
-.dropdown:hover .dropbtn {
-  background-color: orangered
-}
-
-div{
-  background-color: #48e885;
-  box-shadow: red;
-  border: radius 10px;
-  border: #94d2bd;
-}
-
-.animated-section {
-  display: flex;
-  background-color:lightblue;
-  color: black;
-  padding: 20px;
-  gap: 20px;
-  text-align:justify;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /*margin-top: 20px;*/
-}
-
-h2{
-  text-align: center;
-  color: blue;
-}
-p{
-  font-size: 20px;
-  letter-spacing: 1.3;
-
-}
-
-/* Effet au passage de la souris */
-.animated-section:hover {
-  transform: translateY(-10px); /* La section "monte" légèrement */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre plus marquée */
-}
-h3{
-  color: blue;
-}
-
-
-  /*le footer
-  footer{
-    background-color: #48e885;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-  }*/
-
-/* Footer */
-footer{
-  margin: 1em 0;
-    background-color: #48e885;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
+  .foot div a {
+    font-size: 16px; /* Taille du texte dans le footer adaptée */
+    padding: 10px 5px; /* Réduction des marges internes */
   }
-  /*code css de pied de page*/
-  .pied-page{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    width: auto;
-    height: 10%;
-  } 
-    
-  }
+}
 
 
 </style>
@@ -479,40 +275,40 @@ footer{
       <div class="animated-section"> 
      <img src="lesimageduprj/cascade1.jpg" alt="">
           <p>Les cascades de la région du Poro, notamment la cascade de Nafoun près de Boundiali, sont des merveilles naturelles entourées de végétation luxuriante. Elles offrent un cadre apaisant idéal pour les pique-niques et la photographie. Ces sites sont parfaits pour les amoureux de la nature et ceux qui cherchent à explorer la beauté authentique de la région.</p>
-  <img src="./les images de prj/cascade carfigue.jpg" alt="">
+  <img src="lesimagesdeprj/cascade_carfigue.jpg" alt="">
      </div> 
 
     <h3>Le marché artisanal</h3>
     <div class="animated-section">  
-      <img src="lesimageduprj/images (15).jpg" alt="">
+      <img src="lesimageduprj/images_(15).jpg" alt="">
           <p>Le marché artisanal de la région du Poro, notamment à Korhogo, est un lieu incontournable pour découvrir l'artisanat sénoufo. On y trouve des sculptures en bois, des tissus traditionnels, des bijoux faits main et bien d'autres objets reflétant le savoir-faire local. Ce marché est non seulement un espace de commerce, mais aussi un lieu de rencontre culturelle où les artisans partagent leur héritage avec les visiteurs. Une visite idéale pour apprécier la richesse de l'artisanat ivoirien.</p>
-          <img src="lesimageduprj/images (29).jpg" alt="">
+          <img src="lesimageduprj/images_(29).jpg" alt="">
         </div> 
 
          <h3>Le Mont Korhogo</h3>
     <div class="animated-section"> 
-      <img src="lesimageduprj/mont korhogo0.jpg" alt="">
+      <img src="lesimageduprj/mont_korhogo0.jpg" alt="">
           <p>Le Mont Korhogo, situé dans la région du Poro à Korhogo, est une colline emblématique qui culmine à environ 500 mètres d'altitude. Ce site naturel offre une vue panoramique sur la ville et ses environs, ce qui en fait une destination prisée pour les amateurs de randonnée et de paysages. En plus de son attrait touristique, le mont est également un symbole culturel et historique pour la région.</p>
           <img src="lesimageduprj/mont-kgo.jpg" alt="">
       </div> 
 
       <h3>festivale du senangue</h3>
       <div class="animated-section"> 
-        <img src="lesimageduprj/le festivale du senangue.jpg" alt="">
+        <img src="lesimageduprj/le_festivale_du_senangue.jpg" alt="">
             <p>Le Festival du Senang, organisé à Korhogo dans la région du Poro, célèbre la culture sénoufo à travers danses traditionnelles, compétitions, expositions d'artisanat et découvertes gastronomiques. Cet événement annuel attire de nombreux visiteurs et met en valeur les traditions locales dans un esprit de partage et de fête.</p>
-            <img src="./les images de prj/festivale.jpg" alt="">
+            <img src="les_images_de_prj/festivale.jpg" alt="">
         </div>
 
         <h3>Le musee peleforo gbon COULIBALY</h3>
         <div class="animated-section"> 
-          <img src="lesimageduprj/images (15).jpg" alt="">
+          <img src="lesimageduprj/images_(15).jpg" alt="">
               <p>Le Musée Péléforo Gbon Coulibaly, situé à Korhogo dans la région du Poro, est une ancienne maison de Péléforo Gbon Coulibaly, chef sénoufo influent. Converti en musée régional en 1992, il expose des objets artisanaux, masques traditionnels comme le Wabêle, et d'autres éléments culturels sénoufos. Ce lieu incarne un patrimoine historique et culturel vital pour la région.</p>
-              <img src="lesimageduprj/images (15).jpg" alt="">
+              <img src="lesimageduprj/images_(15).jpg" alt="">
           </div>
 
           <h3>Les tisserants de waranierers</h3>
           <div class="animated-section"> 
-            <img src="lesimageduprj/tisserant de waraniere.jpg" alt="">
+            <img src="lesimageduprj/tisserant_de_waraniere.jpg" alt="">
                 <p>Les tisserands de Waraniéné, un village situé près de Korhogo en Côte d'Ivoire, sont renommés pour leur art du tissage traditionnel. Ce village abrite environ 354 métiers à tisser, utilisés par près de 500 artisans et apprentis. Le tissage y est une tradition transmise de génération en génération, principalement par les hommes, tandis que les femmes participent au filage et à la couture.
 Les motifs tissés, comme le "cauris" ou la "peau d'ananas", sont souvent liés à des événements culturels tels que les mariages ou les cérémonies d'initiation. Ces créations attirent des acheteurs locaux et internationaux, faisant de Waraniéné une destination prisée pour découvrir cet artisanat unique</p>
                 <img src="lesimageduprj/tisserant.jpg" alt="">
@@ -529,7 +325,7 @@ Si vous êtes passionné par l'artisanat ou la culture Sénoufo, ce quartier est
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>Pour plus d'informations, visitez notre page d'accueil <a href="./prj.html">poro-tourisme.kgo</a>.</p>
+      <p>Pour plus d'informations, visitez notre page d'accueil <a href="prj.html">poro-tourisme.kgo</a>.</p>
     </section>
   </main>
 
@@ -545,7 +341,7 @@ Si vous êtes passionné par l'artisanat ou la culture Sénoufo, ce quartier est
         </div>
         <div>
             <h3>Autres sites</h3>
-            <a href="./prj.html">festivale-senangue </a>
+            <a href="prj.html">festivale-senangue </a>
         </div>
         <div>
           <a href="mailto:siluesilue919@gmail.com">Contactez-nous par e-mail</a>

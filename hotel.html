@@ -150,13 +150,94 @@ footer{
   color: white;
   text-transform: capitalize;
 }
+
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  .nav-bar {
+    flex-direction: column; /* La barre passe en colonne */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 10px; /* Réduction des espaces */
+  }
+
+  .liens-navv {
+    flex-direction: column; /* Les liens s'empilent verticalement */
+    margin: 10px 0; /* Marges ajustées */
+    font-size: 18px; /* Réduction de la taille de la police */
+  }
+
+  /* Section 1 */
+  .section1 h2 {
+    font-size: 20px; /* Taille ajustée pour les petits écrans */
+  }
+
+  .section1 p {
+    font-size: 16px; /* Texte lisible pour mobile */
+    padding: 10px; /* Réduction des marges */
+  }
+
+  .section1 img {
+    margin-left: auto; /* Centrer les images */
+    width: 90%; /* Images adaptatives */
+    height: auto;
+  }
+
+  /* Restaurant */
+  .restaurant {
+    grid-template-columns: 1fr; /* Une colonne pour les petits écrans */
+    gap: 15px; /* Espacement réduit */
+    margin: 1em; /* Marges ajustées */
+  }
+
+  .restaurant img {
+    width: 100%; /* Images prennent la largeur disponible */
+    height: auto; /* Ajustement des proportions */
+  }
+
+  .restaurant div p {
+    font-size: 16px; /* Réduction de la taille du texte */
+  }
+
+  /* Footer */
+  .foot {
+    flex-direction: column; /* Les éléments du footer passent en colonne */
+    align-items: flex-start; /* Alignement des éléments à gauche */
+    padding: 10px; /* Réduction des espaces internes */
+  }
+
+  .foot div a {
+    font-size: 16px; /* Taille réduite pour les liens */
+    padding: 10px 5px; /* Ajustement des marges internes */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navigation et textes encore plus adaptés aux écrans très petits */
+  .liens-navv {
+    font-size: 14px; /* Taille de police réduite */
+    gap: 5px; /* Moins d'espacement */
+  }
+
+  .section1 p {
+    font-size: 14px; /* Texte ajusté pour petits écrans */
+  }
+
+  .restaurant img {
+    width: 100%; /* Images pleine largeur */
+    height: auto;
+  }
+
+  .foot div a {
+    font-size: 14px; /* Texte plus petit pour liens */
+  }
+}
+
     </style>
 </head>
 <body>
     <header class="en-tete">   
         <nav class="nav-bar">
  <!--<img src="./lesimageduprj/images fotamana.jpg" alt="fatamana">-->
-            <a href="./prj.html"><h1> poro tourisme</h1></a>
+            <a href="prj.html"><h1> poro tourisme</h1></a>
            <div class="liens-navv">
             <a href="./hotel.html"> hotel</a>
             <a href="./RESTAURANTs.html">restaurant</a>
@@ -175,46 +256,46 @@ footer{
         <section class="section1">
           <h2> hotel dans la region du poro</h2>
             <div>
-                <img src="./lesimageduprj/spa-salon-with-beach-view_53876-31335.avif" alt="">
+                <img src="lesimageduprj/spa-salon-with-beach-view_53876-31335.avif" alt="">
                 <p> La région du Poro, notamment à Korhogo, Sinématialiet bien d'autres villes de la region, offre une richesse culturelle, gastronomique et naturelle. À Korhogo, des restaurants comme Le Savanna, Obali Lunch et Bokadios Restaurant mettent en valeur la cuisine locale dans des cadres accueillants. À Sinématiali, l’Eco Ferme de Lokoli propose une expérience culinaire unique avec des mets ivoiriens dans un environnement naturel, agrémentée d’activités comme la piscine et les balades fluviales. Ces destinations reflètent la diversité et l’authenticité de la région.</p>
             </div>
         </section>
     <div class="sect1">
               <h2>Hôtel La Rose Blanche</h2>
         <div class="restaurant">
-             <img src="./lesimageduprj/tropical-hotel-holiday-background-resort_1203-4943.avif" alt="">
+             <img src="lesimageduprj/tropical-hotel-holiday-background-resort_1203-4943.avif" alt="">
     <div>
          <p><strong>Adresse :</strong> Quartier Résidentiel, Face Présidence, Korhogo</p> 
            <p> Le Savanna est un restaurant bien connu situé dans le quartier Résidentiel, face à la Présidence, à Korhogo, dans la région du Poro. Il est réputé pour son ambiance conviviale et sa cuisine variée. Avec une note de 4,6/5 sur certaines plateformes, il est apprécié des visiteurs pour la qualité de ses plats et son service chaleureux</p>
         </div>
-        <img src="./lesimageduprj/swimming-pool_1203-3509.avif" alt="">
+        <img src="lesimageduprj/swimming-pool_1203-3509.avif" alt="">
         </div>
                     <h2>Complexe holympique</h2>
         <div class="restaurant">
-          <img src="./lesimageduprj/silhouette-bower-beach_1339-2655.avif" alt="">
+          <img src="lesimageduprj/silhouette-bower-beach_1339-2655.avif" alt="">
          <div>
             <p><strong>Adresse :</strong> Korhogo, 529 Korhogo</p> 
             <p> Obali est un restaurant situé à Korhogo, dans la région du Poro. Il est connu pour ses plats typiques sénoufos et africains, ainsi que pour ses spécialités européennes variées. Le cadre rénové et modernisé inclut un coin-bar bien décoré, offrant une ambiance agréable. Parmi les recommandations, on trouve l'étouffé de pomme de terre à la pintade, l'alloco et les kédjénous de poulet et de pintade. Ce restaurant est une adresse incontournable pour découvrir la richesse gastronomique locale</p>
         </div>
-      <img src="./lesimageduprj/bali-honeymoon-hotel-bed_1048944-19749900.jpg" alt="">
+      <img src="lesimageduprj/bali-honeymoon-hotel-bed_1048944-19749900.jpg" alt="">
         </div>
         <h2>Santiago Bay Garden & Resort</h2>
         <div class="restaurant">
-           <img src="./lesimageduprj/outdoor-sky-luxury-house-pool_1203-4645.avif" alt="">
+           <img src="lesimageduprj/outdoor-sky-luxury-house-pool_1203-4645.avif" alt="">
            <div> <p><strong>Adresse :</strong> Boulevard Alassane Ouattara, Korhogo</p>
             <p> Le restaurant Ali Baba, situé sur le Boulevard Alassane Ouattara à Korhogo, dans la région du Poro, est une adresse prisée pour sa cuisine variée et son ambiance conviviale. Avec une note de 4/5 sur certaines plateformes, il est apprécié pour la qualité de ses plats et son service. C'est un lieu idéal pour découvrir des saveurs locales et internationales dans un cadre accueillant.</p>
         </div>
-      <img src="./lesimageduprj/hammocks-umbrellas-placed-row_1203-185.avif" alt="">
+      <img src="lesimageduprj/hammocks-umbrellas-placed-row_1203-185.avif" alt="">
         </div>
 
        <h2>L'Éco-ferme Lokoli</h2>
        <div class="restaurant">
-        <img src="./lesimageduprj/bed-with-canopy_1385-1800.avif" alt="">
+        <img src="lesimageduprj/bed-with-canopy_1385-1800.avif" alt="">
         <div> <p><strong>Adresse :</strong> HMPR+64H, Sinématiali, Côte d’Ivoire</p>
          <p> L'Éco-ferme de Lokoli est un endroit unique dans la région du Poro, situé près de Sinématiali, à environ 35 km de Korhogo. Ce lieu combine un restaurant, un complexe hôtelier écologique et une base de loisirs. Le restaurant, perché sur pilotis avec une vue imprenable sur le fleuve Bandama, propose une cuisine locale et internationale, idéale pour savourer des plats dans un cadre apaisant.
           </p>
      </div>
-   <img src="./lesimageduprj/hotel1.avif" alt="">
+   <img src="lesimageduprj/hotel1.avif" alt="">
      </div>
     </div>
     </main>

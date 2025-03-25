@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="lesimageduprj/images fotamana.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurants dans la Région du Poro</title>
+    <title>Restaurants_dans_la_Région_du_Poro</title>
     <style>
 .nav-bar{
     display: flex;
@@ -102,11 +102,7 @@ marquee{
         .restaurant div p{
           color: white;
           font-size: 20px;
-
-
         }
-        
-
         .restaurant img{
           width: 300px;
           height: 300px;
@@ -118,24 +114,19 @@ marquee{
 text-transform: capitalize;
 margin: 2em 0 ;
 }
-
         .section1{
             background-color: #004c75;
         }
-
-
         .foot{
   display: flex;
   justify-content: space-between;
   padding: 10px 150px;
 }
-
 footer{
   background-image: url('lesimageduprj/Poro_region_locator_map_Côte_d\'Ivoire.jpg');
   background-repeat: no-repeat;
   width: 100%;
   height: 30%;
-
 }
 .foot div a{
   text-decoration: none;
@@ -149,6 +140,77 @@ footer{
   padding: 15px 10px;
   color: white;
   text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  .nav-bar {
+    flex-direction: column; /* Navigation en colonne sur mobile */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 10px; /* Réduction des marges internes */
+  }
+  .liens-navv {
+    flex-direction: column; /* Les liens s'empilent verticalement */
+    margin: 10px 0; /* Marges ajustées */
+    font-size: 18px; /* Taille de la police réduite */
+  }
+  /* Section 1 */
+  .section1 h2 {
+    font-size: 20px; /* Réduction de la taille des titres */
+  }
+  .section1 p {
+    font-size: 16px; /* Texte plus petit pour une meilleure lisibilité */
+    padding: 10px; /* Réduction des marges internes */
+  }
+  .section1 img {
+    margin-left: 0; /* Suppression des marges latérales */
+    width: 100%; /* Image prend toute la largeur disponible */
+    height: auto; /* Ajustement automatique de la hauteur */
+  }
+  /* Restaurant */
+  .restaurant {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    gap: 10px; /* Espacement réduit entre les éléments */
+    margin: 1em; /* Réduction des marges externes */
+  }
+  .restaurant img {
+    width: 100%; /* Images adaptatives */
+    height: auto; /* Respect des proportions */
+  }
+  .restaurant div p {
+    font-size: 16px; /* Texte ajusté pour petits écrans */
+  }
+  /* Pied de page */
+  .foot {
+    flex-direction: column; /* Passe le footer en colonne */
+    align-items: flex-start; /* Alignement du texte à gauche */
+    padding: 10px; /* Réduction des marges internes */
+  }
+  .foot div a {
+    font-size: 16px; /* Taille réduite pour les liens */
+    padding: 10px 5px; /* Ajustement des marges internes */
+  }
+}
+@media (max-width: 480px) {
+  /* Navigation */
+  .liens-navv {
+    font-size: 16px; /* Réduction supplémentaire de la police */
+    gap: 5px; /* Espacement réduit */
+  }
+  /* Section 1 */
+  .section1 p {
+    font-size: 14px; /* Réduction encore plus importante pour mobile */
+  }
+  /* Restaurant */
+  .restaurant {
+    gap: 8px; /* Espacement minimal entre les éléments */
+  }
+  .restaurant div p {
+    font-size: 14px; /* Police adaptée aux écrans très petits */
+  }
+  /* Pied de page */
+  .foot div a {
+    font-size: 14px; /* Liens plus petits pour tenir sur l'écran */
+  }
 }
     </style>
 </head>
@@ -169,8 +231,6 @@ footer{
     <div class="Message">
    <h1>   <span> <i class="fa-solid fa-fire"></i> Message inspirant</span> <marquee behavior="" direction="" class="cl-v"><div class="separator">FOTAMANA!</marquee> <marquee behavior="" direction=""></div> BIENVENUE!</marquee>  <marquee behavior="" direction=""><div class="separator"></div>WELCOME!</marquee> </h1>
      </div>
-
-
     <main>
         <section class="section1">
           <h2> restaurant dans la region du poro</h2>

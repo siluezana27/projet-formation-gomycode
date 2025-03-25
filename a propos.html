@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="lesimageduprj/images fotamana.jpg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À Propos - Poro Tourisme.kgo</title>
+  <title>À Propos-Poro Tourisme.kgo</title>
   <link rel="stylesheet" href="style.css"> <!-- Ajoutez un fichier CSS si nécessaire -->
 </head>
 <style>
@@ -178,6 +178,61 @@ footer{
   color: white;
   text-transform: capitalize;
 }
+/*responsibilité*/
+@media (max-width: 768px) {
+  /* Barre de navigation */
+  .nav-bar {
+    flex-direction: column; /* Passe en colonne */
+    align-items: flex-start; /* Alignement des éléments à gauche */
+  }
+
+  .liens-navv {
+    flex-direction: column; /* Liens affichés verticalement */
+    font-size: 18px; /* Taille de texte réduite */
+    margin: 0; /* Suppression des marges */
+  }
+
+  .slider {
+    height: auto; /* Ajustement dynamique de la hauteur */
+  }
+
+  .slide img {
+    height: auto; /* Garder les proportions de l'image */
+  }
+
+  /* Section principale */
+  .animated-section {
+    flex-direction: column; /* Organisation verticale pour petits écrans */
+    padding: 10px; /* Réduction des espacements */
+    text-align: left; /* Aligner le texte à gauche pour une lisibilité accrue */
+  }
+
+  ul li {
+    font-size: 16px; /* Réduction de la taille de police */
+  }
+
+  h2 {
+    font-size: 18px; /* Réduction des titres */
+  }
+
+  p {
+    font-size: 16px; /* Texte adapté à des petits écrans */
+    letter-spacing: 1px; /* Espacement réduit */
+  }
+
+  /* Pied de page */
+  .foot {
+    flex-direction: column; /* Organisation verticale */
+    align-items: flex-start; /* Alignement des liens */
+    padding: 10px; /* Réduction du padding */
+  }
+
+  .foot div a {
+    font-size: 16px; /* Réduction de la taille de texte */
+    padding: 10px 5px; /* Ajustement des marges internes */
+  }
+}
+
 
 
 </style>
@@ -185,7 +240,7 @@ footer{
   <header class="en-tete">   
     <nav class="nav-bar">
 <!--<img src="./lesimageduprj/images fotamana.jpg" alt="fatamana">-->
-        <a href="#"><h1> poro tourisme</h1></a>
+        <a href="prj.html"><h1> poro tourisme</h1></a>
        <div class="liens-navv">
         <a href="./hotel.html"> hotel</a>
         <a href="./RESTAURANTs.html">restaurant</a>
@@ -205,7 +260,7 @@ footer{
           <div class="slides">
             <div class="slide"><img src="./lesimageduprj/masque-wambele.jpg" alt="Image 1"></div>
             <div class="slide"><img src="./lesimageduprj/stade FB_IMG_1680524597961.jpg" alt="Image 2"></div>
-            <div class="slide"><img src="./lesimageduprj/SLIDER side-view-woman-clay-sculpting.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="./lesimageduprj/SLIDER_side-view-woman-clay-sculpting.jpg" alt="Image 3"></div>
             <div class="slide"><img src="./lesimageduprj/SLIDERmedium-shot-nigerian-dancers.jpg" alt="Image 1"></div>
 
           </div>
@@ -229,7 +284,7 @@ footer{
     </div>
            <h2>Qui Sommes-Nous ?</h2>
 <div class="animated-section"> 
-  <img src="lesimageduprj/images (24).jpg" alt="">
+  <img src="lesimageduprj/images_(24).jpg" alt="">
       <p>Nous sommes une équipe passionnée par la valorisation de la région du Poro, située dans le nord de la Côte d’Ivoire. Que vous soyez en quête d’aventure, de détente ou d’un voyage culturel, Poro Tourisme est là pour vous guider à chaque étape. <br>
         Nous sommes une équipe passionnée dédiée à la promotion de la région du Poro, située dans le nord de la Côte d’Ivoire. Notre mission est de révéler au monde la beauté naturelle, la richesse culturelle, et l'histoire fascinante de cette région unique.
 Chez Poro Tourisme kgo, nous croyons au pouvoir du tourisme en tant que vecteur de développement durable et de connexion humaine. Qu'il s'agisse d'aventures palpitantes, de moments de sérénité, ou d'explorations culturelles, nous sommes là pour vous guider et rendre chaque expérience inoubliable.
@@ -239,14 +294,14 @@ Avec un profond respect pour nos communautés locales et notre environnement, no
 </div>
  <h2>Nos Valeurs</h2>
 <div class="animated-section"> 
-     <img src="lesimageduprj/images (25).jpg" alt="">
+     <img src="lesimageduprj/images_(25).jpg" alt="">
       <ul>
         <li><strong>Respect : </strong>Encourager un tourisme respectueux des cultures et de l'environnement.
         en pays senoufo,Le respect occupe une place fondamentale dans la culture et les traditions du peuple sénoufo, qui habite principalement le nord de la Côte d'Ivoire et certaines régions voisines. Cette valeur est profondément enracinée dans la vie quotidienne, les interactions sociales, et les cérémonies communautaires.</li> <br>
         <li><strong>Découverte : </strong>Mettre en lumière des lieux et des expériences uniques.</li> <br>
         <li><strong>Accessibilité : </strong>Faciliter l'accès à l'information pour tous les visiteurs.</li> <br>
       </ul>
-      <img src="lesimageduprj/images (28).jpg" alt="">
+      <img src="lesimageduprj/images_(28).jpg" alt="">
 </div>  
     </section>
     <section id="contact">
@@ -265,7 +320,7 @@ Avec un profond respect pour nos communautés locales et notre environnement, no
         </div>
         <div>
             <h3>Autres sites</h3>
-            <a href="./prj.html">festivale-senangue </a>
+            <a href="prj.html">festivale-senangue </a>
         </div>
         <div>
           <a href="mailto:siluesilue919@gmail.com">Contactez-nous par e-mail</a>
